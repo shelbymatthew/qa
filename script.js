@@ -1,3 +1,5 @@
+$( "#target" ).click(function() {
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
   }
@@ -25,5 +27,6 @@ function getRandomInt(max) {
         break;
     }
     $(function() {
-    $('.namespace').append(` ${person}`)
+    $('.namespace').text(`QA for this site is assigned to ${person}!`)
+});
 });
