@@ -8,17 +8,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="./script.js"></script>
 </head>
 <body>
     <div class="container" style="margin-top: 10px">
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-            <h1 class="display-4">Asset QA</h1>
-            <p class="lead namespace">QA for this site is assigned to...</p>
-            <button type ="button" class="btn btn-outline-secondary btn-lg" id="assign">Assign</a>
+                <h1 class="display-4">Asset QA</h1>
+                <input class="form-control form-control-lg" type="text" id="apartment-input" placeholder="Apartment Name">
+                <br />
+                <button type ="button" class="btn btn-outline-secondary btn-lg" id="assign">Assign</a>
             </div>
         </div>
+        <table class="table table-hover" id='assign-table'>
+            <thead>
+                <tr>
+                    <th>Apartment Name</th>
+                    <th>Assigned To</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAZL-EEDAvir8NSlhazfVmO4FCz9vHDKuw",
+    authDomain: "asset-qa.firebaseapp.com",
+    databaseURL: "https://asset-qa.firebaseio.com",
+    projectId: "asset-qa",
+    storageBucket: "asset-qa.appspot.com",
+    messagingSenderId: "785188994482"
+  };
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+</script>
 </body>
 </html>
