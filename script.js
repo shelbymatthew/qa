@@ -1,5 +1,5 @@
 $(function() {
-$( "#target" ).click(function() {
+$( "#assign" ).click(function() {
     function randomizer(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
