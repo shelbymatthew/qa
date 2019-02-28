@@ -1,10 +1,10 @@
 $(function() {
 $( "#target" ).click(function() {
-    function getRandomInt(max) {
+    function randomizer(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
     let person;
-    let random = getRandomInt(10);
+    let random = randomizer(10);
 
     switch (random) {
         case 0:
