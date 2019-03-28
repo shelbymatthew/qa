@@ -13,17 +13,17 @@ $(function() {
             case 1:
             case 2:
             case 3:
-                person = "Jack";
+                person = "Oscar M";
                 return person;
             case 4:
             case 5:
             case 6:
-                person = "Oscar";
+                person = "Sara B";
                 return person;
             case 7:
             case 8:
             case 9:
-                person ="Sarah";
+                person ="Sarah M";
                 return person;         
         };
      });
