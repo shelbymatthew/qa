@@ -53,7 +53,7 @@ $(function() {
         var key = childSnapshot.key
         console.log(`${key} is the key for ${childApartment}`);
         var dateParsed = moment.unix(childDate/1000).format('MMMM Do YYYY, h:mm:ss a');
-        $("#assign-table > tbody").prepend("<tr><td><a href=" + childApartment + "</a></td><td>" + childName + "</td><td>" + dateParsed + "</td></tr>");
+        $("#assign-table > tbody").prepend("<tr><td><a href='" + childApartment + "'>" + childApartment+" </a></td><td>" + childName + "</td><td>" + dateParsed + "</td></tr>");
     });
 
 });
